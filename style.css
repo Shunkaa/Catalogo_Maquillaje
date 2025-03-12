@@ -24,11 +24,12 @@ body{
     font-family: 'FuenteSegundaria', sans-serif;
   
 }
- #Brilla {
+ nav ul #Brilla {
     font-family: 'FuentePrincipal', sans-serif;
-    margin: 0;
-    padding: 0;
- }
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
  header .direcciones{
     background-color: rgb(255,116,148,255);
     font-family: 'FuenteTerciaria', sans-serif;
@@ -41,23 +42,24 @@ body{
     color: white;
     padding: 20px;
  }
- header #Brilla ::before {
+ header #Brilla::before {
     content: " ";
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     background: url('/pixeles/brilla.png') no-repeat center;
- }
+    background-size: contain; /* Ajusta la imagen dentro del contenedor */
+    margin-right: 20px; /* Agrega espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea con el texto */
+}
  nav ul{
     list-style: none;       /* Elimina las viñetas de la lista */
     display: flex;          /* Usa flexbox para alinear elementos */
-    justify-content:  ;/* Centra los elementos horizontalmente */
-
-  }
+}
 nav li{
     gap: 12;
     margin: 0 10px;
-  }
+}
 nav a {
     color: white;
     text-decoration: none;
