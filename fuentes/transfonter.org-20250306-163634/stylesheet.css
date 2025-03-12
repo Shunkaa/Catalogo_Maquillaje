@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Pixel-Noir Caps';
+    src: url('Pixel-Noir-Caps.woff2') format('woff2'),
+        url('Pixel-Noir-Caps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixel-Noir Skinny Caps';
+    src: url('Pixel-Noir-Skinny-Caps.woff2') format('woff2'),
+        url('Pixel-Noir-Skinny-Caps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixel-Noir Skinny Short';
+    src: url('Pixel-Noir-Skinny-Short.woff2') format('woff2'),
+        url('Pixel-Noir-Skinny-Short.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixel-Noir Skinny';
+    src: url('Pixel-Noir-Skinny.woff2') format('woff2'),
+        url('Pixel-Noir-Skinny.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixel-Noir';
+    src: url('Pixel-Noir-Regular.woff2') format('woff2'),
+        url('Pixel-Noir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
