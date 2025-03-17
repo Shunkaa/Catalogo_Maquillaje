@@ -16,9 +16,19 @@
     url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff') format('woff'),
     url('fuentes/Pixel-Noir\ Skinny.ttf') format('truetype');
 }
+@keyframes slider {
+    0% {transform: translateY(-85px);}
+    5% {transform: translateY(0px);}
+    30% {transform: translateY(0px);}
+    35% {transform: translateY(85px);}
+    65% {transform: translateY(85px);}
+    75% {transform: translateY(170px);}
+    100% {transform: translateY(170px);}
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'FuenteSegundaria', sans-serif;
@@ -37,10 +47,12 @@ body{
     font-size: 12px;
     color: rgb(255, 255, 255);
  }
- header .BarraInicio{
+.BarraInicio{
+    display: flex;
     background-color: rgba(255,174,201,255);
     color: white;
     padding: 20px;
+    align-items: center;
  }
  header #Brilla::before {
     content: " ";
@@ -59,8 +71,63 @@ body{
 nav li{
     gap: 12;
     margin: 0 10px;
+    padding-top: 20px;
 }
 nav a {
+    font-size: 17px;
     color: white;
     text-decoration: none;
+    padding-left: 50px;
 }
+.barraB{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-family:'FuentePrincipal', sans-serif;
+    justify-content: center;
+}
+.BarraBusqueda {
+    background: white;
+    width: 90%;
+    max-width: 650px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+}
+.BarraBusqueda input {
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+}
+.BarraBusqueda button img {
+    width: 25px;
+}
+.BarraBusqueda button {
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer; 
+}
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    animation: slider 5s linear infinite;    
+}
+.slider div {
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+.slider img {
+    width: 50px;
+}
+
