@@ -1,21 +1,21 @@
 /*Fuentes foraneas a las del dispositivo*/
 @font-face {
  font-family: 'FuentePrincipal';
-    src:  url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff2') format('woff2'),
-    url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff') format('woff'),
-    url('fuentes/Pixel-Noir\ Caps.ttf') format('truetype');
+    src:  url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff') format('woff'),
+    url('../fuentes/Pixel-Noir\ Caps.ttf') format('truetype');
 }
 @font-face {
     font-family: 'FuenteSegundaria';
-    src: url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff2') format('woff2'),
-    url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff') format('woff'),
-    url('fuentes/Pixel-Noir\ Skinny\ Caps.ttf') format('truetype')
+    src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff') format('woff'),
+    url('../fuentes/Pixel-Noir\ Skinny\ Caps.ttf') format('truetype')
 }
 @font-face {
     font-family: 'FuenteTerciaria';
-    src: url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff2') format('woff2'),
-    url('fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff') format('woff'),
-    url('fuentes/Pixel-Noir\ Skinny.ttf') format('truetype');
+    src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff') format('woff'),
+    url('../fuentes/Pixel-Noir\ Skinny.ttf') format('truetype');
 }
 /* Animacion de Slider de barra de busqueda */
 @keyframes slider {
@@ -49,8 +49,6 @@
         font-size: 16px; /* Ajusta el tamaño del texto */
     }
 }
-
-
 /* Estilos para pantallas medianas */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
@@ -68,7 +66,6 @@
         max-width: 500px; /* Reduce el tamaño de la barra de búsqueda en pantallas medianas */
     }
 }
-
 /* Estilos para escritorios: pantallas grandes */
 @media screen and (min-width: 1025px) {
     body {
@@ -82,7 +79,6 @@
         justify-content: space-evenly;
     }
 }
-
 /*Quitar margin y padding por defecto*/
 *{
     margin: 0;
@@ -98,7 +94,7 @@ body{
     font-family: 'FuentePrincipal', sans-serif;
     display: flex;
     align-items: center;
-    gap: 8px;
+    font-size: 35px;
 }
  header .direcciones{
     background-color: rgb(255,116,148,255);
@@ -119,7 +115,7 @@ body{
     display: inline-block;
     width: 80px;
     height: 80px;
-    background: url('/pixeles/brilla.png') no-repeat center;
+    background: url('../pixeles/brilla.png') no-repeat center;
     background-size: contain; /* Ajusta la imagen dentro del contenedor */
     margin-right: 20px; /* Agrega espacio entre la imagen y el texto */
     vertical-align: middle; /* Alinea con el texto */
