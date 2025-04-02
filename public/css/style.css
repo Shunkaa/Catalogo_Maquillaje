@@ -38,6 +38,7 @@
     color: #fff;
   }
   nav.BarraInicio {
+    box-sizing: border-box;
     display: flex;
     background-color: rgba(255,174,201,1);
     color: #fff;
@@ -139,20 +140,18 @@
     position: relative;
     width: 100%;
     height: 60vh;
-    overflow: hidden;
     background: rgba(255,174,201,1);
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .carruseles {
+    display: flex;
     width: 300%;
     height: 100%;
-    display: flex;
     transition: transform 0.5s ease-in-out;
   }
   .slider-section {
-    width: calc(100% / 3);
+    width: 100%;
     height: 100%;
   }
   .slider-section img {
@@ -160,6 +159,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    justify-content: flex-end;
   }
   
   /* Botones de navegación */
