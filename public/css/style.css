@@ -1,205 +1,350 @@
 /* Fuentes foráneas */
 @font-face {
-    font-family: 'FuentePrincipal';
-    src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff2') format('woff2'),
-         url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff') format('woff'),
-         url('../fuentes/Pixel-Noir Caps.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'FuenteSegundaria';
-    src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff2') format('woff2'),
-         url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff') format('woff'),
-         url('../fuentes/Pixel-Noir Skinny Caps.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'FuenteTerciaria';
-    src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff2') format('woff2'),
-         url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff') format('woff'),
-         url('../fuentes/Pixel-Noir Skinny.ttf') format('truetype');
-  }
-  
-  /* Reset general y fuente base */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'FuenteSegundaria', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  /* Encabezado y barra de búsqueda */
-  header .direcciones {
-    background-color: rgba(255,116,148,1);
-    font-family: 'FuenteTerciaria', sans-serif;
-    padding: 3px;
-    font-size: 12px;
-    color: #fff;
-  }
-  nav.BarraInicio {
-    box-sizing: border-box;
+  font-family: 'FuentePrincipal';
+  src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Caps.woff') format('woff'),
+    url('../fuentes/Pixel-Noir Caps.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteSegundaria';
+  src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny-Caps.woff') format('woff'),
+    url('../fuentes/Pixel-Noir Skinny Caps.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteTerciaria';
+  src: url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff2') format('woff2'),
+    url('../fuentes/transfonter.org-20250306-163634/Pixel-Noir-Skinny.woff') format('woff'),
+    url('../fuentes/Pixel-Noir Skinny.ttf') format('truetype');
+}
+
+/* Reset general y fuente base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'FuenteSegundaria', sans-serif;
+  overflow-x: hidden;
+}
+
+.direcciones {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff7494;
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+}
+
+.direcciones .sesion ul {
     display: flex;
-    background-color: rgba(255,174,201,1);
-    color: #fff;
-    padding: 20px;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    font-size: 10px;
+    color: #fff;
+    list-style-type: none;  
+}
+
+.direcciones .sesion ul a{
+  margin-left: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Encabezado y barra de búsqueda */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100px;
+  background: #ffaec9;
+}
+
+header .logo {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header .logo img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+header .menu ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 30px;
+  list-style-type: none;
+}
+
+header .menu ul a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+header .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+header .direcciones {
+  background-color: rgba(255, 116, 148, 1);
+  font-family: 'FuenteTerciaria', sans-serif;
+  padding: 3px;
+  font-size: 12px;
+  color: #fff;
+}
+
+nav.BarraInicio {
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgba(255, 174, 201, 1);
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul h1#Brilla {
+  font-family: 'FuentePrincipal', sans-serif;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a,
+nav li a {
+  font-size: 14px;
+  color: rgb(95, 31, 70);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Barra de búsqueda con slider interno */
+
+.BarraBusqueda {
+  background: #fff;
+  max-width: 300px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 65px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.BarraBusqueda input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.BarraBusqueda button {
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.BarraBusqueda button img {
+  width: 30px;
+}
+
+/* Animación para el slider interno de la barra de búsqueda */
+@keyframes slider {
+  0% {
+    transform: translateY(-85px);
   }
+
+  5% {
+    transform: translateY(0px);
+  }
+
+  30% {
+    transform: translateY(0px);
+  }
+
+  35% {
+    transform: translateY(85px);
+  }
+
+  65% {
+    transform: translateY(85px);
+  }
+
+  75% {
+    transform: translateY(170px);
+  }
+
+  100% {
+    transform: translateY(170px);
+  }
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 130px;
+  animation: slider 5s linear infinite;
+}
+
+.slider div {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.slider img {
+  width: 38px;
+}
+
+/* Botón carrito */
+.carrito {
+  padding: 5px 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carrito img {
+  width: 50px;
+}
+
+/* Carrusel Principal */
+.contenedorCarrusel {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: rgba(255, 174, 201, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.carruseles {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-section {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  justify-content: flex-end;
+}
+
+/* Botones de navegación */
+.btnIzquierda,
+.btnDerecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnIzquierda {
+  left: 10px;
+}
+
+.btnDerecha {
+  right: 10px;
+}
+
+.btnIzquierda img,
+.btnDerecha img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+.btnIzquierda img:hover,
+.btnDerecha img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .BarraInicio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BarraBusqueda {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
   nav ul {
-    list-style: none;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
   }
-  nav ul h1#Brilla {
-    font-family: 'FuentePrincipal', sans-serif;
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+
   nav a,
   nav li a {
     font-size: 14px;
-    color: rgb(95, 31, 70);
-    text-decoration: none;
-    white-space: nowrap;
   }
-  
-  /* Barra de búsqueda con slider interno */
-  .BarraBusqueda {
-    background: #fff;
-    max-width: 400px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    height: 75px;
-    position: relative;
-    overflow: hidden;
-    flex-grow: 1;
-  }
+
   .BarraBusqueda input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
+    font-size: 14px;
   }
-  .BarraBusqueda button {
-    padding: 5px 8px;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-  }
-  .BarraBusqueda button img {
-    width: 30px;
-  }
-  /* Animación para el slider interno de la barra de búsqueda */
-  @keyframes slider {
-    0% { transform: translateY(-85px); }
-    5% { transform: translateY(0px); }
-    30% { transform: translateY(0px); }
-    35% { transform: translateY(85px); }
-    65% { transform: translateY(85px); }
-    75% { transform: translateY(170px); }
-    100% { transform: translateY(170px); }
-  }
-  .slider {
-    position: absolute;
-    bottom: 0;
-    left: 130px;
-    animation: slider 5s linear infinite;
-  }
-  .slider div {
-    height: 80px;
-    display: flex;
-    align-items: center;
-  }
-  .slider img {
-    width: 38px;
-  }
-  
-  /* Botón carrito */
-  .carrito {
-    padding: 5px 8px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  .carrito img {
-    width: 50px;
-  }
-  
-  /* Carrusel Principal */
-  .contenedorCarrusel {
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    background: rgba(255,174,201,1);
-    align-items: center;
-    justify-content: center;
-  }
-  .carruseles {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  .slider-section {
-    width: 100%;
-    height: 100%;
-  }
-  .slider-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    justify-content: flex-end;
-  }
-  
-  /* Botones de navegación */
-  .btnIzquierda,
-  .btnDerecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btnIzquierda { left: 10px; }
-  .btnDerecha { right: 10px; }
-  .btnIzquierda img,
-  .btnDerecha img {
-    width: 100%;
-    height: auto;
-    user-select: none;
-    transition: transform 0.3s;
-  }
-  .btnIzquierda img:hover,
-  .btnDerecha img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .BarraInicio { flex-direction: column; align-items: center; }
-    .BarraBusqueda { max-width: 100%; }
-  }
-  @media (max-width: 480px) {
-    nav ul { flex-direction: column; align-items: center; gap: 5px; }
-    nav a, nav li a { font-size: 14px; }
-    .BarraBusqueda input { font-size: 14px; }
-  }
-  
+}
