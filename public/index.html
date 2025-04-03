@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brilla</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="pixeles/Brilla.ico">
 </head>
 
 <body>
     <!-- Encabezado de Página-->
-     <section class="direcciones">
+    <section class="direcciones">
         <p>Se hacen envios a toda Colombia</p>
         <div class="sesion">
             <ul>
@@ -19,11 +19,15 @@
                 <li><a href="#Registro">Registrarse</a></li>
             </ul>
         </div>
-     </section>
+    </section>
 
     <header>
         <section class="logo">
-            <img src="pixeles/Brilla.ico" alt="">
+            <a href="./index.html">
+                <button class="inicio">
+                    <img src="./pixeles/Brilla.ico" alt="">
+                </button>
+            </a>
             <h1 id="Brilla">Brilla</h1>
         </section>
         <section class="menu">
@@ -44,24 +48,24 @@
                     <div><img src="pixeles/sueroRosa.png" alt=""></div>
                 </div>
             </form>
-            <a href="hmtl/mi-carrito.html">
+            <a href="./html/mi-carrito.html">
                 <button class="carrito" type="button">
                     <img src="pixeles/carrito-de-compras.png" alt="Carrito">
                 </button>
             </a>
         </section>
-        </header>
-        <div class="contenedorCarrusel">
-            <div class="carruseles" id="sliderCarrusel">
-                <section class="slider-section"><img src="pixeles/CarruselBienvenida.png" alt="ImagenBienvenida">
-                </section>
-                <section class="slider-section"><img src="pixeles/CarruselDos.png" alt="productosNuevos"></section>
-                <section class="slider-section"><img src="pixeles/CarruselTres.png" alt="ProductosPromo"></section>
-            </div>
-            <div class="btnIzquierda"><img src="pixeles/simbolo-menor-que.png" alt=""></div>
-            <div class="btnDerecha"><img src="pixeles/mayor-que-el-simbolo.png" alt=""></div>
+    </header>
+    <div class="contenedorCarrusel">
+        <div class="carruseles" id="sliderCarrusel">
+            <section class="slider-section"><img src="pixeles/CarruselBienvenida.png" alt="ImagenBienvenida">
+            </section>
+            <section class="slider-section"><img src="pixeles/CarruselDos.png" alt="productosNuevos"></section>
+            <section class="slider-section"><img src="pixeles/CarruselTres.png" alt="ProductosPromo"></section>
         </div>
-        <script src="js/script.js"></script>
+        <div class="btnIzquierda"><img src="pixeles/simbolo-menor-que.png" alt=""></div>
+        <div class="btnDerecha"><img src="pixeles/mayor-que-el-simbolo.png" alt=""></div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

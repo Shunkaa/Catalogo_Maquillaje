@@ -82,6 +82,10 @@ header .logo img {
   margin-right: 20px;
 }
 
+header .inicio {
+  background: transparent;
+  border: transparent;
+}
 
 header .menu {
   display: flex;
@@ -138,22 +142,6 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-nav ul h1#Brilla {
-  font-family: 'FuentePrincipal', sans-serif;
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-nav a,
-nav li a {
-  font-size: 14px;
-  color: rgb(95, 31, 70);
-  text-decoration: none;
-  white-space: nowrap;
 }
 
 /* Barra de búsqueda con slider interno */

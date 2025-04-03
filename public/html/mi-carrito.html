@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <a href="../index.html">
+                <button class="inicio">
+                    <img src="../pixeles/Brilla.ico" alt="">
+                </button>
+            </a>
+            <h1 id="Brilla">Brilla</h1>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="#maquillaje">Maquillaje</a></li>
+                <li><a href="#cuidado_personal">Cuidado Personal</a></li>
+                <li><a href="#joyeria">Joyeria</a></li>
+            </ul>
+        </section>
+        <section class="search">
+            <form class="BarraBusqueda" role="search">
+                <input type="text" placeholder="Busca aqui">
+                <button type="submit"><img src="../pixeles/buscar.png" alt=""> </button>
+
+                <div class="slider">
+                    <div><img src="../pixeles/joyasRosa.png" alt=""></div>
+                    <div><img src="../pixeles/polvo-compactoRosa.png" alt=""></div>
+                    <div><img src="../pixeles/sueroRosa.png" alt=""></div>
+                </div>
+            </form>
+            <a href="mi-carrito.html">
+                <button class="carrito" type="button">
+                    <img src="../pixeles/carrito-de-compras.png" alt="Carrito">
+                </button>
+            </a>
+        </section>
+    </header>
+    <section class="agregar">
+        <button class="nuevoProducto"><img src="../pixeles/agregar-producto.png" alt=""></button>
+        <input type="number" class="codigoProducto" placeholder="Ingrese Codigo">
+        <input type="text" class="nombreProducto" placeholder="Ingrese el nombre">
+        <textarea name="descripcion" id="descProducto" placeholder="Describa el producto"></textarea>
+        <input type="file" accept="image/" class="imgProducto">
+        <input type="number" class="precioProducto" placeholder="Ingrese valor de producto">
+    </section>
+    <script src="../js/script.js"></script>
+    <main>
+
+    </main>
+</body>
+
+</html>
